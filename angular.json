@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "DATAMOLA-TEST"
+    }
+  },
+  "defaultProject": "DATAMOLA-TEST",
+  "cli": {
+    "analytics": false
+  }
 }
