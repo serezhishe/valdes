@@ -14,10 +14,12 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  background: #fff;
+
   color: #333;
   width: 100%;
+
 }
+::ng-deep body { background-color: rgb(27,239,235)};
 
 a {
   color: var(--primary-color);

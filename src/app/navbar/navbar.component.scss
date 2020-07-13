@@ -1,4 +1,5 @@
 nav{
+  margin-top: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -6,4 +7,14 @@ nav{
 
 ::placeholder {
   color: #ffffff;
+}
+::ng-deep nav .mat-form-field-wrapper {
+  background-color: rgb(0, 199, 0);
+  padding: 0;
+  width: 20vw;
+}
+
+::ng-deep .mat-form-field {
+  height: 5vh;
+  border: none;
 }

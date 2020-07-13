@@ -11,6 +11,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSortModule} from '@angular/material/sort';
+import {MatSelectModule} from '@angular/material/select';
 @NgModule({
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -21,6 +22,7 @@ import {MatSortModule} from '@angular/material/sort';
     TableComponentComponent
   ],
   imports: [
+    MatSelectModule,
     MatSortModule,
     MatChipsModule,
     MatPaginatorModule,
@@ -31,7 +33,8 @@ import {MatSortModule} from '@angular/material/sort';
   ],
   providers: [
     {  provide:
-       MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' },
+       MAT_FORM_FIELD_DEFAULT_OPTIONS, useValue: { appearance: 'fill' }
+       ,
      },
   ],
   bootstrap: [AppComponent]

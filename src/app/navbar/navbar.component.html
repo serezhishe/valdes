@@ -1,15 +1,27 @@
 <nav>
   <mat-form-field appearance="outline">
     <mat-label>Name</mat-label>
-    <input matInput placeholder="Placeholder">
+    <input matInput placeholder="Name">
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Genre</mat-label>
-    <input matInput placeholder="Placeholder">
+    <mat-select>
+      <mat-option value="drama">Drama</mat-option>
+      <mat-option value="horror">Horror</mat-option>
+      <mat-option value="crime">Crime</mat-option>
+      <mat-option value="dark comedy">Dark comedy</mat-option>
+      <mat-option value="tragedy">Tragedy</mat-option>
+    </mat-select>
+    <mat-error>Please choose a genre</mat-error>
+    <mat-hint></mat-hint>
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Premiere Year</mat-label>
-    <input matInput placeholder="Placeholder">
+    <mat-select>
+
+    </mat-select>
+    <mat-error>Please choose year</mat-error>
+    <mat-hint></mat-hint>
   </mat-form-field>
 </nav>
 
