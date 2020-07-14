@@ -6,11 +6,7 @@
   <mat-form-field appearance="outline">
     <mat-label>Genre</mat-label>
     <mat-select [formControl]="genre">
-      <mat-option value="drama">Drama</mat-option>
-      <mat-option value="horror">Horror</mat-option>
-      <mat-option value="crime">Crime</mat-option>
-      <mat-option value="dark comedy">Dark comedy</mat-option>
-      <mat-option value="tragedy">Tragedy</mat-option>
+      <mat-option *ngFor="let genre of genres" [value]="genre">{{ genre }}</mat-option>
     </mat-select>
     <mat-error>Please choose a genre</mat-error>
     <mat-hint></mat-hint>

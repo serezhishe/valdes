@@ -11,6 +11,15 @@ export class NavbarComponent implements OnInit {
   public name = new FormControl('');
   public genre = new FormControl('');
   public year = new FormControl('');
+
+  public genres = [
+    "drama",
+    "horror",
+    "crime",
+    "dark comedy",
+    "tragedy",
+  ]
+
   constructor() { }
 
   ngOnInit(): void {
