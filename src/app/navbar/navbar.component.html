@@ -1,11 +1,11 @@
 <nav>
   <mat-form-field appearance="outline">
     <mat-label>Name</mat-label>
-    <input matInput placeholder="Name">
+    <input matInput placeholder="Name" [formControl]="name">
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Genre</mat-label>
-    <mat-select>
+    <mat-select [formControl]="genre">
       <mat-option value="drama">Drama</mat-option>
       <mat-option value="horror">Horror</mat-option>
       <mat-option value="crime">Crime</mat-option>
@@ -17,7 +17,7 @@
   </mat-form-field>
   <mat-form-field appearance="outline">
     <mat-label>Premiere Year</mat-label>
-    <mat-select>
+    <mat-select [formControl]="year">
 
     </mat-select>
     <mat-error>Please choose year</mat-error>

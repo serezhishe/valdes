@@ -12,6 +12,7 @@ import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 import {MatChipsModule} from '@angular/material/chips';
 import {MatSortModule} from '@angular/material/sort';
 import {MatSelectModule} from '@angular/material/select';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA,
@@ -22,6 +23,7 @@ import {MatSelectModule} from '@angular/material/select';
     TableComponentComponent
   ],
   imports: [
+    ReactiveFormsModule,
     MatSelectModule,
     MatSortModule,
     MatChipsModule,

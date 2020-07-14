@@ -8,10 +8,11 @@ import { ELEMENT_DATA } from '../../assets/dataSource';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-
+  public name = new FormControl('');
+  public genre = new FormControl('');
+  public year = new FormControl('');
   constructor() { }
 
   ngOnInit(): void {
   }
-
 }

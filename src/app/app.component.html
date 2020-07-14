@@ -3,6 +3,10 @@
     <app-navbar></app-navbar>
   </header>
   <main>
-    <app-table-component></app-table-component>
+    <app-table-component
+      [nameFilter]="nameFilter"
+      [genreFilter]="genreFilter"
+      [yearFilter]="yearFilter"
+    ></app-table-component>
   </main>
 </div>
